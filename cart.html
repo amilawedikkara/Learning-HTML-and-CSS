@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Your Cart</h1>
+      </header>
+
+      <main>
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Burger</td>
+              <td>2</td>
+              <td>$5.00</td>
+              <td>$10.00</td>
+            </tr>
+            <tr>
+              <td>Fries</td>
+              <td>1</td>
+              <td>$3.00</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Drink</td>
+              <td>1</td>
+              <td>$2.00</td>
+              <td>$2.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Total Price -static values for assigment -->
+        <div class="total-price"><strong>Total Price:</strong> $15.00</div>
+        <div class="cart-bottom">
+          <!-- Restaurant Selection dropdown -->
+          <div class="restaurant-selection">
+            <label for="restaurant">Select Restaurant:</label>
+            <select id="restaurant" name="restaurant">
+              <option value="restaurant1">Restaurant 1</option>
+              <option value="restaurant2">Restaurant 2</option>
+              <option value="restaurant3">Restaurant 3</option>
+            </select>
+          </div>
+
+          <!-- Buttons submmit -->
+          <div class="buttons">
+            <a href="Final6.html">
+              <button class="btn back-menu">Back to Menu</button>
+            </a>
+            <button class="btn submit-order">Submit Order</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

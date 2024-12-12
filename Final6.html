@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata for character encoding and viewport for responsiveness -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML and CSS Final Project</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles6.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header section with navigation -->
+      <header>
+        <div class="logo">Burger Restaurant</div>
+        <nav>
+          <ul>
+            <!-- Navigation links to different sections of the page -->
+            <li><a href="#burgers">Burgers</a></li>
+            <li><a href="#sides">Sides</a></li>
+            <li><a href="#beverages">Beverages</a></li>
+            <li><a href="#desserts">Desserts</a></li>
+            <li><a href="cart.html">Cart(3)</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Main content with menu categories -->
+      <main>
+        <!-- Burgers Section -->
+        <section id="burgers" class="menu-category">
+          <h2>Burgers</h2>
+          <div class="menu-grid">
+            <!-- Classic burger item -->
+            <div class="menu-item">
+              <div class="tooltip">
+                <!-- Image for the classic burger -->
+                <img src="Burger_classic.jpg" alt="Classic burger" />
+                <!-- Tooltip with nutritional information -->
+                <span class="tooltiptext">
+                  Calories: 650 kcal<br />
+                  Protein: 28g<br />
+                  Fat: 35g<br />
+                  Carbs: 50g
+                </span>
+              </div>
+              <!-- Details of the classic burger -->
+              <div class="details">
+                <h3>Classic burger</h3>
+                <p class="price">$10.99</p>
+                <p class="discriptipn">
+                  A 100% beef patty grilled to perfection, topped with American
+                  cheddar and lettuce in a toasted sesame bun.
+                </p>
+                <button>Add to Cart</button>
+              </div>
+            </div>
+            <!-- More burger items -->
+            <!-- Cheese burger -->
+            <div class="menu-item">
+              <div class="tooltip">
+                <img src="burger_cheese.jpg" alt="Cheese burger" />
+                <span class="tooltiptext">
+                  Calories: 550 kcal<br />
+                  Protein: 18g<br />
+                  Fat: 15g<br />
+                  Carbs: 50g
+                </span>
+              </div>
+              <div class="details">
+                <h3>Cheese burger</h3>
+                <p class="price">$11.99</p>
+                <p class="discriptipn">
+                  A double patty with melted cheddar cheese. This chicken dinner
+                  is certainly a WINNER!
+                </p>
+                <button>Add to Cart</button>
+              </div>
+            </div>
+            <!-- Repeat similar structure for other menu items like Bacon, Veggie, and Special burgers -->
+          </div>
+        </section>
+        <!-- Sides Section -->
+        <section id="sides" class="menu-category">
+          <h2>Sides</h2>
+          <div class="menu-grid">
+            <!-- Fries item -->
+            <div class="menu-item">
+              <div class="tooltip">
+                <img src="sides_fries2.jpg" alt="Fries" />
+                <span class="tooltiptext">
+                  Calories: 150 kcal<br />
+                  Protein: 3g<br />
+                  Fat: 8g<br />
+                  Carbs: 60g
+                </span>
+              </div>
+              <div class="details">
+                <h3>Fries</h3>
+                <p class="price">$11.50</p>
+                <p class="discriptipn">French Fries, Chicken Nuggets & Fries</p>
+                <button>Add to Cart</button>
+              </div>
+            </div>
+            <!-- Repeat similar structure for other sides like Onion Rings and Salads -->
+          </div>
+        </section>
+        <!-- Beverages Section -->
+        <section id="beverages" class="menu-category">
+          <h2>Beverages</h2>
+          <div class="menu-grid">
+            <!-- Example beverage item -->
+            <div class="menu-item">
+              <div class="tooltip">
+                <img src="sodas.jpg" alt="Sodas" />
+                <span class="tooltiptext">
+                  Calories: 550 kcal<br />
+                  Protein: 3g<br />
+                  Fat: 8g<br />
+                  Carbs: 60g
+                </span>
+              </div>
+              <div class="details">
+                <h3>Sodas</h3>
+                <p class="price">$8.99</p>
+                <p class="discriptipn">Soda, cola, and sprite</p>
+                <button>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Desserts Section -->
+        <section id="desserts" class="menu-category">
+          <h2>Desserts</h2>
+          <div class="menu-grid">
+            <!-- Example dessert item -->
+            <div class="menu-item">
+              <div class="tooltip">
+                <img src="Ice cream.jpg" alt="Ice cream" />
+                <span class="tooltiptext">
+                  Calories: 550 kcal<br />
+                  Protein: 3g<br />
+                  Fat: 8g<br />
+                  Carbs: 60g
+                </span>
+              </div>
+              <div class="details">
+                <h3>Ice cream</h3>
+                <p class="price">$10.99</p>
+                <p class="discriptipn">
+                  Chocolate Mousse and Blueberry Cheesecake
+                </p>
+                <button>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Footer with restaurant details -->
+      <footer>
+        <div class="footer-container">
+          <p>Opens Everyday From 11 AM - 2 AM</p>
+          <p>Oulu 41 7456 344</p>
+          <p>&copy; 2024 Burger Restaurant</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

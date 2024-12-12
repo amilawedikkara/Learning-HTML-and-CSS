@@ -1,0 +1,138 @@
+/* Reset margins, paddings, and set default font */
+body,
+h1,
+p,
+table {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Default font for all elements */
+}
+
+/* Body styling for background and text */
+body {
+  background-color: #e1e5f1; /* Light background for better readability */
+  color: #333; /* Default text color */
+  line-height: 1.6; /* Better spacing between lines */
+}
+
+/* Central container for layout with shadow and rounded edges */
+.container {
+  max-width: 800px; /* Set max width for readability */
+  margin: 20px auto; /* Center align with margins */
+  padding: 20px; /* Internal spacing */
+  background: #fff; /* White background for content */
+  border-radius: 8px; /* Smooth corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header title styling */
+header h1 {
+  text-align: left; /* Align header to the left */
+  margin-bottom: 20px;
+  background-color: #607878; /* Dark background for header */
+  border-radius: 5px; /* Rounded edges */
+  color: white; /* Contrasting text color */
+  padding-left: 10px; /* Padding for header text */
+}
+
+/* Table styling for cart items */
+.cart-table {
+  width: 100%; /* Full width table */
+  border-collapse: collapse; /* Merge borders for clean look */
+  margin-bottom: 20px;
+  background-color: whitesmoke; /* Light table background */
+}
+
+.cart-table th,
+.cart-table td {
+  border: 1px solid #ddd; /* Light borders for separation */
+  padding: 10px; /* Spacing inside cells */
+  text-align: center; /* Center align text in cells */
+}
+
+.cart-table th {
+  background-color: #f4f4f4; /* Slightly darker background for headers */
+}
+
+/* Total price section styling */
+.total-price {
+  font-size: 1.2rem; /* Larger font for emphasis */
+  text-align: right; /* Align to the right */
+  margin-bottom: 20px;
+}
+
+/* Restaurant selection container */
+.restaurant-selection {
+  margin-bottom: 20px;
+  padding: 10px;
+  color: white;
+  border-radius: 3px;
+}
+
+/* Labels for restaurant selection */
+.restaurant-selection label {
+  font-weight: bold; /* Bold text for emphasis */
+  margin-right: 10px; /* Spacing between label and inputs */
+  padding: 5px; /* Internal padding */
+  border-radius: 3px; /* Rounded corners */
+}
+
+/* Buttons container for layout */
+.buttons {
+  display: flex; /* Flexbox for spacing between buttons */
+  justify-content: space-between; /* Spread buttons evenly */
+  padding: 10px; /* Padding for container */
+}
+
+/* General button styling */
+.btn {
+  padding: 10px 15px; /* Button padding */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Smooth corners */
+  cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+/* Styling for back menu button */
+.btn.back-menu {
+  background-color: rgb(214, 222, 219); /* Light gray background */
+  color: black; /* Black text */
+  padding: 10px;
+}
+.btn.back-menu:hover {
+  color: red; /* Change text color on hover */
+}
+
+/* Styling for submit order button */
+.btn.submit-order {
+  background-color: rgb(214, 222, 219); /* Same styling as back button */
+  color: black;
+  padding: 10px;
+}
+.btn.submit-order:hover {
+  color: red; /* Hover effect */
+}
+
+/* Styling for the bottom section of the cart */
+.cart-bottom {
+  background-color: #607878; /* Dark background */
+  border-radius: 5px; /* Smooth corners */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+  .cart-table th,
+  .cart-table td {
+    font-size: 0.9rem; /* Smaller font size for smaller screens */
+    padding: 8px; /* Adjust padding */
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between stacked buttons */
+  }
+
+  .btn {
+    width: 100%; /* Full width buttons */
+    text-align: center; /* Center-align text */
+  }
+}

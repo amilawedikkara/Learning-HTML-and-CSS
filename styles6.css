@@ -1,0 +1,230 @@
+/* General body styling for font, margins, and background color */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e1e5f1;
+}
+
+/* Grid container layout with header, main, and footer sections */
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header, content, footer rows */
+  min-height: 100vh; /* Ensure full viewport height */
+}
+
+/* Header styling for fixed position and responsiveness */
+header {
+  background-color: #607878;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+/* Logo styling with a custom font and size */
+header .logo {
+  font-size: 1.5rem;
+  font-family: fangsong;
+  font-size: xx-large;
+}
+
+/* Navigation styling for horizontal menu */
+header nav ul {
+  list-style: none; /* Remove bullet points */
+  display: flex;
+  gap: 1rem; /* Spacing between links */
+  padding-right: 50px;
+}
+
+/* Styling for navigation links */
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+}
+header nav ul li a:hover {
+  color: rgb(199, 222, 50); /* Change color on hover */
+}
+
+/* Padding adjustments for menu categories */
+.menu-category {
+  padding: 2rem;
+  padding-top: 80px; /* Adjust for fixed header overlap */
+}
+
+/* Grid layout for menu items */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Responsive grid */
+  gap: 1rem;
+}
+
+/* Menu item card styling */
+.menu-item {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+}
+
+/* Image styling within menu items */
+.menu-item img {
+  max-width: 100%; /* Maintain aspect ratio */
+  height: 250px;
+  width: 200px;
+}
+.menu-item img:hover {
+  max-width: 100%;
+  height: 300px; /* Enlarge on hover */
+  width: 250px;
+  transition: all 0.5s; /* Smooth transition effect */
+}
+
+/* Styling for headings */
+h2 {
+  font-family: fangsong;
+  font-weight: bold;
+  font-size: xx-large;
+}
+h3 {
+  font-family: fangsong;
+  margin-bottom: auto;
+  padding-top: 5px;
+}
+
+/* Additional details for menu items */
+.details {
+  font-family: fangsong;
+  color: white;
+  background-color: #607878;
+  border-radius: 15px;
+}
+
+/* Price styling for emphasis */
+main .price {
+  font-size: x-large;
+  margin: auto;
+}
+
+/* Description styling for smaller font */
+.discriptipn {
+  font-family: system-ui;
+  font-size: smaller;
+  padding-bottom: 2px;
+  height: 100%;
+}
+
+/* Button styling for cart actions */
+button {
+  width: 100px;
+  border-radius: 10px;
+  background-color: rgb(214, 222, 219);
+  padding: 2px;
+}
+button:hover {
+  height: 35px; /* Enlarges on hover */
+}
+
+/* Footer styling for fixed position and center alignment */
+footer {
+  background-color: #607878;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  height: 25px;
+}
+
+/* Footer container for layout alignment */
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Bottom padding for main content to avoid overlapping footer */
+main {
+  padding-bottom: 150px;
+}
+
+/* Tooltip container styling */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip hidden by default */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  color: #271de3;
+  text-align: left;
+  border-radius: 5px;
+  padding: 8px;
+  position: absolute;
+  bottom: -25px; /* Adjust based on layout */
+  left: 25%;
+  transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 10px;
+}
+
+/* Tooltip visibility on hover */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+  .menu-category {
+    padding: 1rem;
+    padding-top: 80px;
+  }
+  header {
+    font-size: 0.6rem;
+  }
+  header .logo {
+    font-size: 20px;
+  }
+  header nav ul {
+    padding-right: 35px;
+    gap: 0.4rem;
+    width: max-content;
+  }
+  .menu-grid {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+  .cart-table th,
+  .cart-table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-container {
+    font-size: xx-small;
+    margin-right: 40px;
+  }
+}
